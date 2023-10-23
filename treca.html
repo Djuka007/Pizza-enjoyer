@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <title>Kontakt</title>
+    <style>
+    .ispod{
+     width: 99%;
+     height: 36px;
+     border: 2px solid black;
+     background-color: white;
+     padding:10px;
+     padding-right: 0;
+     }
+     ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     }
+     li {
+     font-family:Arial, Helvetica, sans-serif;
+     display: inline;
+     border: 2px solid black;
+     padding: 15px;
+     margin-left: 0px;
+
+     }
+     .navbar{
+        text-decoration: none;
+        font-size: 25px;
+     } 
+     body{
+     background-color: brown;
+     }
+     p {
+        color:white;
+        font-size: 20px;
+        text-align: center;
+     }
+     #prva{
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     padding: 5px;
+     max-width: 100%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     }
+     #bruda{
+        float:right;
+        padding: 10px;
+        margin-right: 10px;
+        margin-top: -9px;
+     }
+    </style>
+</head>
+<body>
+    <div class="ispod">
+        <ul>
+        <li onmouseover="ChangeBgColor(this, 'skyblue')" onmouseout="ChangeBgColor(this,'whitesmoke')"><a class="navbar" href="prva.html">O nama</li></a>
+        <li onmouseover="ChangeBgColor(this, 'skyblue')" onmouseout="ChangeBgColor(this,'whitesmoke')"><a class="navbar" href="druga.html">Picerija</li></a>
+        <li id="bruda" onmouseover="ChangeBgColor(this, 'skyblue')" onmouseout="ChangeBgColor(this,'whitesmoke')"><a class="navbar" href="treca.html">Kontakt</li></a>
+        </ul>
+    </div>
+    <p id="test123" onclick="tekst()">Radno vreme svakim radnim danom od 08:00 do 20:00 casova.</br>
+        Subotom i nedeljom ne radimo.</br>
+        Kontakt telefon 062/715-32-54
+    </p>
+    <img id="prva" src="picamrale.jpg" width="700px" height="500px"></img>
+</body>
+</html>

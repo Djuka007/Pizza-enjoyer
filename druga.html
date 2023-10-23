@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <title>Picerija</title>
+    <style>
+    .ispod{
+     width: 99%;
+     height: 36px;
+     border: 2px solid black;
+     background-color: white;
+     padding:10px;
+     padding-right: 0;
+     }
+     ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     }
+     li {
+     font-family:Arial, Helvetica, sans-serif;
+     display: inline;
+     border: 2px solid black;
+     padding: 15px;
+     margin-left: 0px;
+
+     }
+     .navbar{
+        text-decoration: none;
+        font-size: 25px;
+     } 
+     body{
+     background-color: brown;
+     }
+     p {
+        color:white;
+        font-size: 25px;
+        text-align: center;
+     }
+     #prozor{
+        align-items: center;
+     }
+     h2{
+        font-size: 40px;
+        text-align: center;
+        font-style: bold;
+        color: azure;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     .meni{
+        text-decoration: none;
+        font-style: bold;
+        color: wheat;
+
+     } 
+     .prozor{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+     }
+     #divajder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     font-size: 20px;
+     color: white;
+     text-align: center;
+     }
+     #bruda{
+        float:right;
+        padding: 10px;
+        margin-right: 10px;
+        margin-top: -9px;
+     }
+    </style>
+</head>
+<body>
+    <div class="ispod">
+        <ul>
+        <li onmouseover="ChangeBgColor(this, 'skyblue')" onmouseout="ChangeBgColor(this,'whitesmoke')"><a class="navbar" href="prva.html">O nama</li></a>
+        <li onmouseover="ChangeBgColor(this, 'skyblue')" onmouseout="ChangeBgColor(this,'whitesmoke')"><a class="navbar" href="druga.html">Picerija</li></a>
+        <li id="bruda" onmouseover="ChangeBgColor(this, 'skyblue')" onmouseout="ChangeBgColor(this,'whitesmoke')"><a class="navbar" href="treca.html">Kontakt</li></a>
+        </ul>
+    </div>
+    <h2>
+        Dobrodosli na mesto gde mozete poruciti picu po vasoj zelji samo unesite podatke i informacije trazene i sve ce biti poslato ka zeljenoj adresi, nas meni mozete videti u produzetku!
+      </h2>
+      <form name="obrazac">
+      <p>Ovde napisite vasu porudzbinu</p>
+      <textarea class="prozor" name="porudzbina" id="prozor" cols="30" rows="10"></textarea>
+        <p>Ime: <br /></p>
+        <input class="prozor" type="text" name="ime" /> <br />
+        <p>Adresa: <br /></p>
+        <input class="prozor" type="text" name="adresa" /> <br />
+        <input class="prozor" type="button" onclick="posalji()" value="Posalji" />
+      </form>
+    <p>Nas meni : <a  class="meni" href="#" onclick="meni(1)">Pizza ili <a  class="meni" href="#" onclick="meni(2)">Pica</a></a> <---Stisni jedno ili drugo </p>
+    
+        <div id="divajder"></div>
+</body>
+</html>
